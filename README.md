@@ -1,7 +1,7 @@
-# MFA Conditional Access
+# MFA, Conditional Access & Identity Protection (In Progress)
 
-<img src="https://png.pngtree.com/png-vector/20210604/ourmid/pngtree-gray-network-placeholder-png-image_3416659.jpg" height="60%" width="60%" alt="placeholder"/>
-  
+![MFA - Conditional Access - Identity Protection](https://github.com/0xbythesecond/MFA-Conditional-Access/assets/23303634/c333d377-7103-48b1-91e0-f3cd723683f0)
+
 ## Excercise 1: Deploy an Azure VM by using an Azure Resource Manager template
 
 <details>
