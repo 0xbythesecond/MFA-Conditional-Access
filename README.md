@@ -1,4 +1,4 @@
-# MFA, Conditional Access & Identity Protection (In Progress)
+# MFA, Conditional Access & Identity Protection (In Process)
 
 ![MFA - Conditional Access - Identity Protection](https://github.com/0xbythesecond/MFA-Conditional-Access/assets/23303634/c333d377-7103-48b1-91e0-f3cd723683f0)
 
