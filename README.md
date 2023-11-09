@@ -10,7 +10,7 @@
   
 In this task, you will learn how to deploy an Azure virtual machine (VM) using an Azure Resource Manager (ARM) template.
 
-Sign in to the Azure portal using an account with the Owner or Contributor role in the Azure subscription and the Global Administrator role in the associated Azure AD tenant.
+Sign in to the Azure portal using an account with the Owner or Contributor role in the Azure subscription and the Global Administrator role in the associated Microsoft Entra ID tenant.
 
 In the Azure portal, use the search bar at the top to search for "Deploy a custom template" or select "Template Deployment (deploy using custom templates)" from the Marketplace list.
 
@@ -48,7 +48,7 @@ Click "Review + create" and then click "Create." Do not wait for the deployment 
 
 <details>
   
-  <summary><h3>Task 1: Create a new Azure AD tenant</h3></summary>    
+  <summary><h3>Task 1: Create a new Microsoft Entra ID tenant</h3></summary>    
   
 In this task, you will create a new Azure Active Directory (AD) tenant.
 
@@ -56,9 +56,9 @@ Open the Azure portal and sign in using your Azure account.
 
 In the search bar at the top of the portal, type "Azure Active Directory" and select it from the search results.
 
-On the Overview page of your current Azure AD tenant, click "Manage tenants."
+On the Overview page of your current Microsoft Entra ID tenant, click "Manage tenants."
 
-On the Tenants page, click "+ Create" to create a new Azure AD tenant.
+On the Tenants page, click "+ Create" to create a new Microsoft Entra ID tenant.
 
 On the Basics tab of the Create a tenant blade, select "Azure Active Directory" and click "Next: Configuration >."
 
@@ -69,7 +69,7 @@ Initial domain name: Enter a unique name consisting of a combination of letters 
 Country or region: Select "United States."
 Note: Record the initial domain name for later use.
 
-Click "Review + Create" and then click "Create" to create the new Azure AD tenant.
+Click "Review + Create" and then click "Create" to create the new Microsoft Entra ID tenant.
 
 Wait for the new tenant to be created. You can monitor the deployment status using the Notification icon in the Azure portal.
 
@@ -77,9 +77,9 @@ Wait for the new tenant to be created. You can monitor the deployment status usi
 
 <details>
   
-<summary><h3>Task 2: Activate Azure AD Premium P2 trial</h3></summary>  
+<summary><h3>Task 2: Activate Microsoft Entra ID Premium P2 trial</h3></summary>  
   
-In this task, you will sign up for the Azure AD Premium P2 free trial.
+In this task, you will sign up for the Microsoft Entra ID Premium P2 free trial.
 
 In the Azure portal, click the Directory + Subscription icon in the toolbar.
 
@@ -87,19 +87,19 @@ In the Directory + Subscription blade, select the newly created tenant "AdatumLa
 
 Note: If the "AdatumLab500-04" entry doesn't appear, you may need to refresh the browser window.
 
-In the Azure portal, type "Azure Active Directory" in the search bar and select it from the search results. Navigate to the "Licenses" section in the "AdatumLab500-04" Azure AD blade.
+In the Azure portal, type "Azure Active Directory" in the search bar and select it from the search results. Navigate to the "Licenses" section in the "AdatumLab500-04" Microsoft Entra ID blade.
 
 On the Licenses | Overview blade, click "All products" in the Manage section, and then click "+ Try / Buy."
 
-On the Activate blade, click "Free Trial" in the Azure AD Premium P2 section, and then click "Activate" to start the trial.
+On the Activate blade, click "Free Trial" in the Microsoft Entra ID Premium P2 section, and then click "Activate" to start the trial.
 
 </details>
 
 <details>
   
-<summary><h3>Task 3: Create Azure AD users and groups</h3></summary>    
+<summary><h3>Task 3: Create Microsoft Entra ID users and groups</h3></summary>    
 
-In this task, you will create three Azure AD users: aaduser1 (Global Admin), aaduser2 (user), and aaduser3 (user).
+In this task, you will create three Microsoft Entra ID users: aaduser1 (Global Admin), aaduser2 (user), and aaduser3 (user).
 
 Navigate back to the "AdatumLab500-04" Azure Active Directory blade.
 
@@ -136,9 +136,9 @@ Usage Location: Select "United States"
 
 <details>
   
-<summary><h3>Task 4: Assign Azure AD Premium P2 licenses to Azure AD users</h3></summary>  
+<summary><h3>Task 4: Assign Microsoft Entra ID Premium P2 licenses to Microsoft Entra ID users</h3></summary>  
 
-In this task, you will assign Azure AD Premium P2 licenses to the Azure AD users.
+In this task, you will assign Microsoft Entra ID Premium P2 licenses to the Microsoft Entra ID users.
 
 On the Users blade, click the entry representing your user account.
 
@@ -160,7 +160,7 @@ Click "Review + assign" and then click "Assign."
 
 Sign out from the Azure portal and sign back in using the same account. This step is necessary for the license assignment to take effect.
 
-  >**Note**: At this point, you have assigned Azure AD Premium P2 licenses to all the user accounts.
+  >**Note**: At this point, you have assigned Microsoft Entra ID Premium P2 licenses to all the user accounts.
 
 </details>
 
@@ -188,7 +188,7 @@ Notice that the "Multi-Factor Auth status" column for "aaduser1" is now "Enabled
 
 Click on "aaduser1" and observe that you also have the "Enforce" option.
 
-Note: Changing the user status from "Enabled" to "Enforced" impacts only legacy Azure AD integrated apps that don't support Azure MFA. Once the status changes to "Enforced," these apps require the use of app passwords.
+Note: Changing the user status from "Enabled" to "Enforced" impacts only legacy Microsoft Entra ID integrated apps that don't support Azure MFA. Once the status changes to "Enforced," these apps require the use of app passwords.
 
 With the "aaduser1" entry selected, click "Manage user settings" and review the available options.
 
@@ -212,7 +212,7 @@ On the "Enable Security Defaults" blade, click "No" to disable security defaults
 
 Select "My Organization is using Conditional Access" as the reason and click "Save."
 
-Note: Make sure you are signed in to the "AdatumLab500-04" Azure AD tenant with a user account that has the Global Administrator role.
+Note: Make sure you are signed in to the "AdatumLab500-04" Microsoft Entra ID tenant with a user account that has the Global Administrator role.
 
 </details>
 
@@ -226,7 +226,7 @@ Open an InPrivate browser window.
 
 Navigate to the Azure portal and sign in using the "aaduser1" user account.
 
-Note: To sign in, you need to provide the fully qualified name of the "aaduser1" user account, including the Azure AD tenant DNS domain name, which you recorded earlier in this lab. The user name should be in the format "aaduser1@<your_tenant_name>.onmicrosoft.com," where "<your_tenant_name>" is the placeholder representing your unique Azure AD tenant name.
+Note: To sign in, you need to provide the fully qualified name of the "aaduser1" user account, including the Microsoft Entra ID tenant DNS domain name, which you recorded earlier in this lab. The user name should be in the format "aaduser1@<your_tenant_name>.onmicrosoft.com," where "<your_tenant_name>" is the placeholder representing your unique Microsoft Entra ID tenant name.
 
 When prompted, click "Next" in the "More information required" dialog box.
 
@@ -250,7 +250,7 @@ Sign out as "aaduser1" and close the InPrivate browser window.
   
 </details>  
   
-## Exercise 3: Implement Azure AD Conditional Access Policies
+## Exercise 3: Implement Microsoft Entra ID Conditional Access Policies
 
   <details>
   <summary><h3>Task 1: Configure a conditional access policy</h3></summary>
@@ -306,23 +306,23 @@ On the Conditional Access | Policies blade, locate the "AZ500Policy1" policy, cl
 ## Exercise 4: Deploy risk-based policies in Conditional Access
 
 <details>
-<summary><h3>Task 1: View Azure AD Identity Protection options in the Azure portal</h3></summary>
+<summary><h3>Task 1: View Microsoft Entra ID Identity Protection options in the Azure portal</h3></summary>
 
 Sign in to the Azure portal (https://portal.azure.com/) if needed.
 
-Make sure you are signed in to the "AdatumLab500-04" Azure AD tenant with a user account that has the Global Administrator role.
+Make sure you are signed in to the "AdatumLab500-04" Microsoft Entra ID tenant with a user account that has the Global Administrator role.
 
-Navigate to the Azure AD tenant settings by clicking on the Azure Active Directory blade.
+Navigate to the Microsoft Entra ID tenant settings by clicking on the Azure Active Directory blade.
 
 In the Azure Active Directory blade, under the Security section, click on "Identity Protection."
 
-Explore the options and features available in Azure AD Identity Protection.
+Explore the options and features available in Microsoft Entra ID Identity Protection.
   </details>  
   
 <details>
   <summary><h3>Task 2: Configure a user risk policy</h3></summary>
 
-In the Azure portal, go to the "AdatumLab500-04" Azure AD tenant blade.
+In the Azure portal, go to the "AdatumLab500-04" Microsoft Entra ID tenant blade.
 
 In the Security section, click on "Conditional Access" to access the Conditional Access policies.
 
@@ -368,9 +368,9 @@ Click "Create" to create the policy.
   </details>
    
 <details>
-  <summary><h3>Task 4: Simulate risk events against the Azure AD Identity Protection policies</h3></summary>
+  <summary><h3>Task 4: Simulate risk events against the Microsoft Entra ID Identity Protection policies</h3></summary>
 
-In the Azure AD Identity Protection blade, go to the "Risk detections" section.
+In the Microsoft Entra ID Identity Protection blade, go to the "Risk detections" section.
 
 Click on "Simulate risk detections" to simulate risk events for testing.
 
@@ -378,9 +378,9 @@ Follow the prompts to simulate various risk events and observe how the policies 
   </details>
 
 <details>
-  <summary><h3>Task 5: Review the Azure AD Identity Protection reports</h3></summary>
+  <summary><h3>Task 5: Review the Microsoft Entra ID Identity Protection reports</h3></summary>
 
-In the Azure AD Identity Protection blade, navigate to the "Reports" section.
+In the Microsoft Entra ID Identity Protection blade, navigate to the "Reports" section.
 
 Explore the various reports available, such as risk events, user risk, and sign-in risk.
 
